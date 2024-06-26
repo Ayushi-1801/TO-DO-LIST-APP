@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +35,107 @@
   to {
     transform: rotate(360deg);
   }
+}
+*/
+/* App.css */
+
+/* App.css */
+
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensures full viewport height */
+  background: linear-gradient(to right, #caa2f4, #d3d3d3); /* Gradient from light (#caa2f4) to dark (#d3d3d3) */
+}
+
+.App {
+  text-align: center;
+  width: 100%; /* Adjust width as needed */
+  max-width: 600px; /* Limit maximum width */
+  border-radius: 20px; /* Adds curved borders */
+  overflow: hidden; /* Ensures content does not overflow curved borders */
+  background-color: white; /* Background color for the container */
+  padding: 20px; /* Padding inside the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.App-header {
+  background-color: #9081f0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  margin-bottom: 20px; /* Space between header and main content */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: white; /* Ensures white background for main content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow for depth */
+}
+
+.todo-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px; /* Adjust maximum width for input */
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #9081f0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.todo-list li.completed {
+  background-color: #d3d3d3;
+  text-decoration: line-through;
 }
